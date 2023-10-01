@@ -1,0 +1,97 @@
+.card {
+    width: 260px;
+    height: 400px;
+    margin: 50px 1px 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.selected {
+    margin: 40px 1px 1px;
+    width: 300px;
+    height: 420px;
+}
+
+.cardSpeed {
+    background-color: #f8f8f8;
+    height: 20%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardTerms {
+    background-color: #ededed;
+    height: 20%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.blue,
+.green,
+.red,
+.black {
+    color: #fff;
+    border-bottom: 2px solid #fafafa;
+    margin: 0;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.blue {
+    background-color: #479cab;
+}
+
+.green {
+    background-color: #3e8671;
+}
+
+.red {
+    background-color: #c15452;
+}
+
+.black {
+    background-color: #282d33;
+}
+
+.priceBlue,
+.priceGreen,
+.priceRed,
+.priceBlack {
+    height: 40%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+.priceBlue {
+    background-color: #59c2d6;
+}
+
+.priceGreen {
+    background-color: #53af8e;
+}
+
+.priceRed {
+    background-color: #eb695e;
+}
+
+.priceBlack {
+    background-color: #333a44;
+}
+
+sub {
+    font-size: 16px;
+}
+
+sup {
+    font-size: 16px;
+}
