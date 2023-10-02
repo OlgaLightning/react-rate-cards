@@ -1,5 +1,5 @@
 .card {
-    width: 260px;
+    width: 270px;
     height: 400px;
     margin: 50px 1px 1px;
     font-family: 'Roboto', sans-serif;
@@ -65,11 +65,12 @@
 .priceBlack {
     height: 40%;
     margin: 0;
+    color: #fff;
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
-    color: #fff;
 }
 
 .priceBlue {
@@ -88,10 +89,22 @@
     background-color: #333a44;
 }
 
-sub {
-    font-size: 16px;
+.currency {
+    font-size: 20px;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    transform: translateY(-100%);
 }
 
-sup {
-    font-size: 16px;
+.priceValue {
+    font-size: 60px;
+}
+
+.period {
+    font-size: 20px;
+    position: absolute;
+    bottom: 80px;
+    right: 25px;
+    transform: translateY(100%);
 }

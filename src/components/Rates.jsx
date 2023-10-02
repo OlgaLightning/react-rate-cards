@@ -7,7 +7,11 @@ export default function Rates({ name, price, speed, terms, color, priceColor, is
     return (
         <div className={a}>
             <h3 className={style[color]}>{name}</h3>
-            <h1 className={style[priceColor]}><sup>руб </sup> {price} <sub> /мес</sub></h1>
+            <div className={style[priceColor]}>
+                <span className={style.currency}>руб</span>
+                <span className={style.priceValue}>{price}</span>
+                <span className={style.period}>/мес</span>
+            </div>
             <p className={style.cardSpeed}>{speed}</p>
             <p className={style.cardTerms}>{terms}</p>
         </div >
