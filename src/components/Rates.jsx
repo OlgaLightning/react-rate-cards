@@ -1,11 +1,16 @@
-import style from './rates.module.scss'
+import style from './rates.module.scss';
 
-export default function Rates({ name, price, speed, terms, color, priceColor, isSelected }) {
+export default function Rates({ name, price, speed, terms, color, priceColor, activeCard, item, setId }) {
 
-    const a = isSelected ? style.selected : style.card;
+    const cl = activeCard ? style.selected : style.card;
+
+
+    function handleActive() {
+        setId(item.id);
+    }
 
     return (
-        <div className={a}>
+        <div className={`${cl}`} onClick={handleActive} >
             <h3 className={style[color]}>{name}</h3>
             <div className={style[priceColor]}>
                 <span className={style.currency}>руб</span>
@@ -14,6 +19,6 @@ export default function Rates({ name, price, speed, terms, color, priceColor, is
             </div>
             <p className={style.cardSpeed}>{speed}</p>
             <p className={style.cardTerms}>{terms}</p>
-        </div >
+        </div>
     )
 }

@@ -21,8 +21,7 @@
         "speed": "до 100 Мбит/сек",
         "terms": "Объем включенного трафика не ограничен",
         "color": "red",
-        "priceColor": "priceRed",
-        "isSelected": true
+        "priceColor": "priceRed"
     },
     {
         "name": "Безлимитный 1000",
