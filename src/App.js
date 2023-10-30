@@ -10,11 +10,10 @@ function App() {
   return (
     <div className='container'>
       {data.map((item, index) => (
-        <Rates {...item}
-          speed={item.speed}
-          terms={item.terms}
-          item={item}
-          activeCard={item.id === id}
+        <Rates
+          {...item}
+          index={index}
+          activeCard={index === id}
           setId={setId}
           key={index} />
       ))}

@@ -1,12 +1,12 @@
 import style from './rates.module.scss';
 
-export default function Rates({ name, price, speed, terms, color, priceColor, activeCard, item, setId }) {
+export default function Rates({ name, price, speed, terms, color, priceColor, activeCard, index, setId }) {
 
     const cl = activeCard ? style.selected : style.card;
 
 
     function handleActive() {
-        setId(item.id);
+        setId(index);
     }
 
     return (
